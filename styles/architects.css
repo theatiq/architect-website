@@ -124,8 +124,28 @@ main>section {
 #quick-list {
     font-weight: 500;
 }
+/* Feature */
 
-
+.features {
+    gap: 140px;
+}
+.feature-secton-title {
+    border-left: #FF900E;
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.feature-card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    
+}
 /* Some Facts related style */
 .facts-container {
     display: grid;
