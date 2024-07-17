@@ -8,30 +8,30 @@
   font-style: normal;
 }
 
-/* Shared Styles */
-.text-primary {
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+.text-primary{
     color: #FF900E;
 }
 
-/* Dark-02 */
-.text-gray {
+/* dark 02 */
+.text-gray{
     color: #424242;
 }
 
-/* Dark-03 */
+/* dark03 */
 .text-light-gray{
     color: #727272;
 }
 
-.display-flex {
-    display: flex;
-}
-
-.bg-light {
+.bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary {
+.btn-primary{
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
@@ -41,113 +41,110 @@
     border: none;
 }
 
-main {
+main{
     max-width: 1440px;
     margin: 0 auto;
 }
 
-main>section {
+main > section{
     margin-top: 130px;
-
 }
 
-.section-title {
+.section-title{
     font-size: 2.8rem;
     font-weight: 700;
 }
-/* Header Styles */
 
+/* header styles */
 
-/* Navbar Styles */
-.navbar {
+/* navbar related styles */
+.navbar{
     justify-content: space-between;
     align-items: center;
 }
 
-.brand {
+.brand{
     font-weight: 700;
     font-size: 3rem;
 }
-.nav-item {
+.nav-item{
     list-style: none;
     margin-right: 30px;
 }
 
-.nav-links {
+.nav-link{
     text-decoration: none;
     font-weight: 500;
 }
 
-.navbar, .banner {
+.navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
 }
 
-/* Banner Styles */
-.banner-content {
+/* banner related styles */
+.banner-content{
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
-.banner-title {
+.banner-title{
     font-weight: 700;
     font-size: 4rem;
 }
 
-.banner-image {
+.banner-image{
     width: 100%;
 }
 
-/* Teams and feature related styles */
-
-.teams {
+/* team and feature related styles */
+.teams{
     align-items: center;
 }
 
-.team-images-container {
+.team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-.our-features {
+.our-features{
     margin-left: 130px;
     max-width: 530px;
 }
-.section-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-}
 
-#quick-list {
+#quick-list{
     font-weight: 500;
 }
-/* Feature */
 
-.features {
+/* features section related styles */
+
+.features{
     gap: 140px;
 }
-#feature-section-title {
-    border-left: #FF900E;
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
-.feature-card {
+
+.feature-card{
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
 }
-.feature-card .feature-title {
+
+.feature-card .feature-title{
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0px;
     margin-bottom: 0px;
-    
 }
 
-#experience-badge {
+#experience-badge{
     padding: 45px 42px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -155,20 +152,21 @@ main>section {
     margin-top: -100px;
 }
 
-#experience-year {
+#experience-year{
     font-size: 4rem;
     font-weight: 700;
 }
 
-.featured-architect img {
+.featured-architect img{
     width: 100%;
 }
-/* Some Facts related style */
-.facts-container {
+
+/* some facts related styles */
+.facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.fact-card {
+.fact-card{
     border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
@@ -178,87 +176,93 @@ main>section {
     justify-content: center;
 }
 
-.fact-number {
+.fact-number{
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.fact-name {
+.fact-name{
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.fact-description {
+.fact-description{
     max-width: 540px;
 }
 
-/* Sponsor Info */
-.sponsor-info {
+
+/* sponsor related styles */
+.sponsor-info{
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-.sponsor-companies {
+
+.sponsor-companies{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-companies img {
+
+.sponsor-companies img{
     filter: grayscale(100%);
 }
 
-/* Responsive */
+
+/* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, 
-    .nav-links,
+    .nav-links, 
     .features,
-    .teams 
-     {
+    .teams{
         flex-direction: column;
     }
 
-    .team-images-container,
-    .facts-container,
+    .team-img-container, 
+    .facts-container, 
     .sponsor-companies
     {
         grid-template-columns: 1fr;
     }
-    .facts-container {
+
+    .facts-container{
         justify-items: center;
         gap: 24px;
     }
-    .sponsor-companies {
+
+    .sponsor-companies{
         justify-items: center;
         gap: 50px;
     }
-    
-    .our-features {
+
+    .our-features{
         margin-left: 20px;
     }
 
-    #experience-badge {
+    #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
     }
 }
 
-/* Medium Size Device */
-
+/* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .features {
+    .teams, .features{
         flex-direction: column;
     }
-    .our-features {
+    .our-features{
         margin: 50px auto;
     }
+
     .sponsor-companies, .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
     }
-    #experience-badge {
+
+    #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
     }
